@@ -5,14 +5,49 @@ output:
   html_document:
     keep_md: true
 ---
-This assignment is part of the Coursera-Johns Hopkins University course **Reproducible Research.**
 
-You can find more information about it in the `README.md` document.
+<p>&nbsp;</p> 
 
+This assignment is part of the Coursera-Johns Hopkins University course **Reproducible Research.** You can find more information about it in the `README.md` document.
+
+<p>&nbsp;</p>
 
 ## Loading and preprocessing the data
 
+<p>&nbsp;</p>
 
+First we need to prepare the package we will use:
+```{r packages, echo=TRUE, message=FALSE}
+
+library(dplyr)
+library(ggplot2)
+
+```
+
+<p>&nbsp;</p>
+
+The GitHub repository contains the dataset, so we do not have to download the data.
+We just need to unzip it:
+
+```{r unzip, echo=TRUE}
+if(!file.exists("activity.csv")) {
+      unzip("activity.zip")
+}
+
+activity <- read.csv("activity.csv")
+
+```
+
+<p>&nbsp;</p>
+
+Explore the data
+
+```{r explore, echo=TRUE}
+
+head(activity, n = 10)
+```
+
+<p>&nbsp;</p>
 
 ## What is mean total number of steps taken per day?
 

@@ -390,8 +390,49 @@ summary {
 </div>
 
 
+<p>
+ 
+</p>
+<p>This assignment is part of the Coursera-Johns Hopkins University course <strong>Reproducible Research.</strong> You can find more information about it in the <code>README.md</code> document.</p>
+<p>
+ 
+</p>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
+<p>
+ 
+</p>
+<p>First we need to prepare the package we will use:</p>
+<pre class="r"><code>library(dplyr)
+library(ggplot2)</code></pre>
+<p>
+ 
+</p>
+<p>The GitHub repository contains the dataset, so we do not have to download the data. We just need to unzip it:</p>
+<pre class="r"><code>if(!file.exists(&quot;activity.csv&quot;)) {
+      unzip(&quot;activity.zip&quot;)
+}
+
+activity &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
+<p>
+ 
+</p>
+<p>Explore the data</p>
+<pre class="r"><code>head(activity, n = 10)</code></pre>
+<pre><code>##    steps       date interval
+## 1     NA 2012-10-01        0
+## 2     NA 2012-10-01        5
+## 3     NA 2012-10-01       10
+## 4     NA 2012-10-01       15
+## 5     NA 2012-10-01       20
+## 6     NA 2012-10-01       25
+## 7     NA 2012-10-01       30
+## 8     NA 2012-10-01       35
+## 9     NA 2012-10-01       40
+## 10    NA 2012-10-01       45</code></pre>
+<p>
+ 
+</p>
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>

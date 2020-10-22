@@ -1,6 +1,5 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-author: "Guillermo Florez Montero"
 output: 
   html_document:
     keep_md: true

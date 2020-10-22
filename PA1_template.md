@@ -5,9 +5,6 @@ output:
   html_document:
     keep_md: true
 ---
-This assignment is part of the Coursera-Johns Hopkins University course **Reproducible Research.**
-
-You can find more information about it in the `README.md` document.
 
 
 ## Loading and preprocessing the data

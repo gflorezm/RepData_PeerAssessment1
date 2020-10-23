@@ -215,10 +215,12 @@ head(steps_interval2)
 
 
 ```{r time_series 2, echo=TRUE, fig.height=10}
+
 ggplot(data = steps_interval2, mapping = aes(x = interval, y = mean.steps)) +
    geom_line(stat = "identity", colour = "darkgreen", size = 1.2) +
    facet_wrap(. ~ day, ncol = 1) +
    labs(x = "5-minute interval", y = "Average number of steps") +
    theme_bw()
+
 ```
 

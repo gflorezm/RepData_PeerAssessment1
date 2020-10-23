@@ -622,6 +622,7 @@ head(steps_interval2)</code></pre>
 ## 4        5 weekend     0.0425
 ## 5       10 weekday     0.173 
 ## 6       10 weekend     0.0162</code></pre>
+<p>and make the plot</p>
 <pre class="r"><code>ggplot(data = steps_interval2, mapping = aes(x = interval, y = mean.steps)) +
    geom_line(stat = &quot;identity&quot;, colour = &quot;darkgreen&quot;, size = 1.2) +
    facet_wrap(. ~ day, ncol = 1) +

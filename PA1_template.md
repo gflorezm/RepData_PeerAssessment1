@@ -352,7 +352,7 @@ head(steps_interval2)
 ## 6       10 weekend     0.0162
 ```
 
-
+and make the plot
 
 ```r
 ggplot(data = steps_interval2, mapping = aes(x = interval, y = mean.steps)) +
@@ -362,5 +362,5 @@ ggplot(data = steps_interval2, mapping = aes(x = interval, y = mean.steps)) +
    theme_bw()
 ```
 
-![](PA1_template_files/figure-html/time_series 2-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series2-1.png)<!-- -->
 
